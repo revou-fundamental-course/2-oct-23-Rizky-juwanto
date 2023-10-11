@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Konversi Suhu</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Konversi Suhu</h1>
+        <form id="temp-converter-form">
+            <label for="temperature">Masukkan Suhu (°C):</label>
+            <input type="number" id="temperature" required data-unit="C">
+            <input type="submit" value="Konversi">
+            <input type="reset" value="Reset">
+            <button type="button" id="switch-button">Switch</button>
+        </form>
+        <div id="result">
+            <p>Hasil Konversi:</p>
+                <p id="conversion-result"></p>
+            <p id="explanation"></p>
+        </div>
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
